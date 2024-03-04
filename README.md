@@ -9,13 +9,13 @@ ______________________________________________
 Between the rest and show render functions, use your call varaible to call the `.drawRectangle(int (x, y), int width, int height, int r, int g, int b, boolean showOutlineOnly)` function.
 
 *EXAMPLE:*
-int pos[2] = { 50, 50 };
+int pos[2] = { 50, 50 }; <br />
 screen.drawRectangle(pos, 50, 50, 155, 155, 155, false);
 ______________________________________________
 ## Drawing Lines
 Between the rest and show render functions, use your call varaible to call the `.drawLine(int point1 (x, y), int point2 (x, y), int r, int g, int b)` function.
 
 *EXAMPLE:*
-int pos[2] = { 50, 50 };
-int pos2[2] = { 100, 100 };
+int pos[2] = { 50, 50 }; <br />
+int pos2[2] = { 100, 100 }; <br />
 screen.drawRectangle(pos, pos2, 155, 155, 155);
