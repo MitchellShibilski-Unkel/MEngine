@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include <math.h>
 #include <iostream>
-#include "py.h"
+#include "py.c"
 
 using namespace std;
 
