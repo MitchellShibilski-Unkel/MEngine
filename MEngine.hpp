@@ -70,7 +70,7 @@ public:
 		SDL_RenderPresent(m_renderer);
 	}
 
-	int gravity(int ground, int acceleration, int objectY, int mass) {
+	int gravity(int ground, int acceleration, int y, int mass) {
 		int distance = y - ground;
 		int force = (acceleration * mass) / distance
 		
