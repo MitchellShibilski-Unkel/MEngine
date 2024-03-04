@@ -1,7 +1,7 @@
 # Documentation
 ______________________________________________
 ## Categories
-1. Begin
+1. Begin (** *EXAMPLE:* **)
 2. Draw:
    a. Rectangles
    b. Lines
