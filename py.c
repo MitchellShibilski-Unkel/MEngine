@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 
-int PyFunc(const char* directory, const char* function) {
-	Py_Initialize();
+int PyFunc(const char* directory, const char* function, PyObject* args) {
+    Py_Initialize();
 
     // Load the module
     PyObject* pName = PyUnicode_FromString(directory);
@@ -13,19 +13,32 @@ int PyFunc(const char* directory, const char* function) {
         // Load all module level attributes as a dictionary
         PyObject* pDict = PyModule_GetDict(pModule);
 
-        // Remember that you are loading the module as a dictionary, the lookup you were
-        // doing on pDict would fail as you were trying to find something as an attribute
-        // which existed as a key in the dictionary
-        PyObject* pFunc = PyDict_GetItem(pDict, PyUnicode_FromString(function));
+        // Retrieve the function object from the module
+        PyObject* pFunc = PyDict_GetItemString(pDict, function);
 
-        if (pFunc != NULL) {
-            PyObject* result = PyObject_CallObject(pFunc, NULL);
-            _Py_DECREF(result);
+        if (pFunc != NULL && PyCallable_Check(pFunc)) {
+            // Call the Python function with arguments
+            PyObject* result = PyObject_CallObject(pFunc, args);
+
+            if (result != NULL) {
+                // Do something with the result if needed
+                Py_DECREF(result);
+            } else {
+                // Handle error if the Python function call fails
+                PyErr_Print();
+            }
+        } else {
+            // Handle error if the function is not found or not callable
+            printf("ERROR: Function not found or not callable\n");
         }
-        else {
-            printf("ERROR :: Function Not Found");
-        }
+    } else {
+        // Handle error if the module fails to import
+        printf("ERROR: Module not found\n");
     }
-    else
-        printf("ERROR :: File Not Found");
+
+    // Cleanup
+    Py_DECREF(pName);
+    Py_DECREF(pModule);
+    Py_DECREF(args);
+    Py_Finalize();
 }
