@@ -1,10 +1,10 @@
 # Documentation
 ______________________________________________
-## Categories
-1. Begin (https://github.com/MitchellShibilski-Unkel/MEngine/blob/main/README.md#how-to-begin)
-2. Draw: 
-   a. Rectangles (https://github.com/MitchellShibilski-Unkel/MEngine/blob/main/README.md#drawing-rectangles)
-   b. Lines (https://github.com/MitchellShibilski-Unkel/MEngine/blob/main/README.md#drawing-lines)
+## Categories <br />
+1. Begin (https://github.com/MitchellShibilski-Unkel/MEngine/blob/main/README.md#how-to-begin) <br />
+2. Draw: <br />
+   a. Rectangles (https://github.com/MitchellShibilski-Unkel/MEngine/blob/main/README.md#drawing-rectangles) <br />
+   b. Lines (https://github.com/MitchellShibilski-Unkel/MEngine/blob/main/README.md#drawing-lines) <br />
 ______________________________________________
 ## How To Begin
 1. Write the `int main(int argc, char* argv[]` loop
