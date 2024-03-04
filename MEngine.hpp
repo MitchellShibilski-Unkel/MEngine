@@ -70,10 +70,11 @@ public:
 		SDL_RenderPresent(m_renderer);
 	}
 
-	int gravity(int ground, int acceleration, int objectY, int mass, string mEngineLocation) {
-		string path = mEngineLocation + "\\MEngine\\utils";
-		const char* fpath = path.c_str();
-		return PyFunc(fpath, "gravity", ground, acceleration, objectY, mass);
+	int gravity(int ground, int acceleration, int objectY, int mass) {
+		int distance = y - ground;
+		int force = (acceleration * mass) / distance
+		
+		return round(force);
 	}
 
 	void update(bool runVar) {	
