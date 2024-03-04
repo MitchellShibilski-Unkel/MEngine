@@ -8,7 +8,7 @@ ______________________________________________
 ## Drawing Rectangles
 Between the rest and show render functions, use your call varaible to call the `.drawRectangle(int (x, y), int width, int height, int r, int g, int b, boolean showOutlineOnly)` function.
 
-$${\color{blue}***EXAMPLE:***}$$ <br />
+***EXAMPLE:*** <br />
 int pos[2] = { 50, 50 }; <br />
 screen.drawRectangle(pos, 50, 50, 155, 155, 155, false);
 ______________________________________________
