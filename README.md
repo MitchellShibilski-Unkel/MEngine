@@ -1,5 +1,11 @@
 # Documentation
 ______________________________________________
+## Categories
+1. Begin
+2. Draw:
+   a. Rectangles
+   b. Lines
+______________________________________________
 ## How To Begin
 1. Write the `int main(int argc, char* argv[]` loop
 2. Then, inside the loop, call MEngine and create a window by using `__call_name__.createWindow(string title, int width, int height, boolean fullscreen, boolean resizable)`
