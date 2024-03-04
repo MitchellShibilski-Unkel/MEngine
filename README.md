@@ -1,10 +1,10 @@
 # Documentation
 ______________________________________________
 ## Categories
-1. Begin (** *EXAMPLE:* **)
-2. Draw:
-   a. Rectangles
-   b. Lines
+1. Begin (https://github.com/MitchellShibilski-Unkel/MEngine/blob/main/README.md#how-to-begin)
+2. Draw: 
+   a. Rectangles (https://github.com/MitchellShibilski-Unkel/MEngine/blob/main/README.md#drawing-rectangles)
+   b. Lines (https://github.com/MitchellShibilski-Unkel/MEngine/blob/main/README.md#drawing-lines)
 ______________________________________________
 ## How To Begin
 1. Write the `int main(int argc, char* argv[]` loop
