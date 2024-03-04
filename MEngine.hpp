@@ -73,7 +73,7 @@ public:
 	int gravity(int ground, int acceleration, int objectY, int mass, string mEngineLocation) {
 		string path = mEngineLocation + "\\MEngine";
 		const char* fpath = path.c_str();
-		return m_pyf.PyFuncInt(fpath, "utils", "gravity");
+		return m_pyf.PyFunc(fpath, "utils", "gravity");
 	}
 
 	void update(bool runVar) {	
